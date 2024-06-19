@@ -1,4 +1,10 @@
 #!/bin/bash
-# Use head and tail to extract the third line of 'iacta'
-line=$(head -n 3 iacta | tail -n 1)
-echo "$line"
+
+# Check if the file 'iacta' exists
+if [ -f "iacta" ]; then
+    # Use head and tail to get the third line
+    line=$(head -n 3 iacta | tail -n 1)
+    echo "$line"
+else
+    echo "File 'iacta' does not exist."
+fi
