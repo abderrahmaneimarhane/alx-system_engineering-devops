@@ -1,4 +1,2 @@
 #!/bin/bash
-while IFS= read -r line; do
-    echo "$line" | tr 'A' 'Z' | tr 'c' 'e'
-done
+while IFS= read -r line; do echo "$line" | tr 'A' 'Z' | tr 'c' 'e'; done
