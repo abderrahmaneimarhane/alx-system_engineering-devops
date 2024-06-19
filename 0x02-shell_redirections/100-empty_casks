@@ -1,3 +1,2 @@
 #!/bin/bash
-find . -type f -empty -print0 | xargs -0 ls -ld
-find . -type d -empty -print0 | xargs -0 ls -ld
+find . -empty -printf "%P\n"
