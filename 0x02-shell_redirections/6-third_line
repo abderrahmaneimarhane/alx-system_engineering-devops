@@ -1,0 +1,4 @@
+#!/bin/bash
+# Use head and tail to extract the third line of 'iacta'
+line=$(head -n 3 iacta | tail -n 1)
+echo "$line"
