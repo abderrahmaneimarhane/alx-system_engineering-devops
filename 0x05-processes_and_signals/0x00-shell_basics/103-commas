@@ -1,2 +1,0 @@
-#!/bin/bash
-ls -Ap | awk '{printf "%s%s", (/\/$/ ? $0 ", " : $0 "\n")}' && echo 
